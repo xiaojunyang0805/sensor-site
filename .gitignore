@@ -1,0 +1,41 @@
+# NOTE: this folder is the Cloudflare Pages deploy root.
+# Anything committed here becomes PUBLICLY downloadable at sensor.seenano.nl/<file>.
+# Think before adding personal or unpublished material.
+
+# Personal documents — deliberately excluded from publication (2026-08-16).
+# The CV itself was moved to ../archive/. This pattern is a safety net so a
+# stray `git add .` can never publish it.
+*CV*.pdf
+*CV*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Office lock/temp files
+~$*
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies / build output (none today — static site, no build step)
+node_modules/
+dist/
+build/
+
+# Temporary files
+*.tmp
+.cache/
