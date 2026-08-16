@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications | SeeNano Technology BV</title>
+    <meta name="description" content="What SeeNano's electrochemical sensing platform measures: PFAS in water and soil, cortisol and health biomarkers, wearable sweat sensing, micro- and nanoparticle characterisation, and bacterial spores in dairy.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Applications | SeeNano Technology BV">
+    <meta property="og:description" content="PFAS, cortisol, wearable sweat sensing, particle characterisation and food safety — the measurements our electrochemical platform is built for.">
+    <meta property="og:type" content="website">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGW5JX03J1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HGW5JX03J1', {
+        'cookie_domain': '.seenano.nl',
+        'linker': {
+          'domains': ['www.seenano.nl', 'nanosim.seenano.nl', 'receiptsort.seenano.nl', 'stembot.seenano.nl', 'sensor.seenano.nl']
+        }
+      });
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .tech-card {
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .badge-green {
+            background-color: #D1FAE5;
+            color: #065F46;
+        }
+
+        .badge-blue {
+            background-color: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .badge-purple {
+            background-color: #E9D5FF;
+            color: #6B21A8;
+        }
+
+        .badge-yellow {
+            background-color: #FEF3C7;
+            color: #92400E;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Shared nav (duplicated per page on purpose: static site, no build step) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <a href="index.html" class="flex items-baseline gap-2 shrink-0">
+                    <span class="text-xl font-bold text-gray-900">SeeNano</span>
+                    <span class="hidden sm:inline text-[10px] font-semibold text-gray-500 uppercase tracking-widest">Technology BV</span>
+                </a>
+                <div class="flex items-center gap-1 text-sm overflow-x-auto">
+                    <a href="index.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Home</a>
+                    <a href="technology.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Technology</a>
+                    <a href="products.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Products</a>
+                    <a href="applications.html" aria-current="page" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-indigo-700 bg-indigo-50">Applications</a>
+                    <a href="research.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Research</a>
+                    <a href="index.html#about-company" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">About</a>
+                    <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                            class="ml-1 px-4 py-2 rounded-md gradient-bg text-white font-semibold whitespace-nowrap hover:opacity-90 transition">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page header -->
+    <section class="gradient-bg text-white py-14 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Applications</h1>
+            <p class="text-lg opacity-95 max-w-3xl mx-auto">
+                What our sensing platform is used to measure — and how far each application has got
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 py-16">
+
+        <!-- Honest status framing -->
+        <section class="mb-14">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Our instruments and electrodes are general-purpose; what makes them useful is the
+                    measurement you point them at. Below are the applications we are actively working on,
+                    each labelled with how mature it actually is.
+                </p>
+                <div class="inline-flex flex-wrap justify-center gap-3 text-sm">
+                    <span class="badge badge-green">Active — funded work under way</span>
+                    <span class="badge badge-blue">In development — not yet a product</span>
+                    <span class="badge badge-yellow">Research — exploratory</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application cards -->
+        <section class="mb-20">
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <article class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6 text-white">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-2xl font-bold">💧 PFAS in water and soil</h3>
+                            <span class="badge badge-blue whitespace-nowrap">In development</span>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">The problem</h4>
+                            <p class="text-gray-700 leading-relaxed">PFAS are regulated at extremely low concentrations, and confirmatory analysis means sending samples to a lab — slow and costly enough that most sites are simply under-sampled.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Our approach</h4>
+                            <p class="text-gray-700 leading-relaxed">MIP-functionalised electrodes give a selective, artificial recognition layer for PFAS, read out on a low-cost potentiostat. The aim is on-site screening that tells you where the lab work is actually worth doing.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-4">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li class="flex gap-2"><span class="text-blue-700">•</span><span>Molecularly imprinted polymer recognition</span></li>
+                                <li class="flex gap-2"><span class="text-blue-700">•</span><span>Picomolar-level detection targeted</span></li>
+                                <li class="flex gap-2"><span class="text-blue-700">•</span><span>Screening at the sample site</span></li>
+                                <li class="flex gap-2"><span class="text-blue-700">•</span><span>Water and soil matrices</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4 pt-1">
+                            <a href="technology.html" class="inline-flex items-center gap-1 text-sm font-semibold text-blue-700 hover:underline">MIP electrode technology →</a>
+                            <a href="research.html" class="inline-flex items-center gap-1 text-sm font-semibold text-blue-700 hover:underline">MIP-PFAS project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 p-6 text-white">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-2xl font-bold">🧬 Stress and health biomarkers</h3>
+                            <span class="badge badge-blue whitespace-nowrap">In development</span>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">The problem</h4>
+                            <p class="text-gray-700 leading-relaxed">Cortisol and similar biomarkers are usually measured by immunoassay in a laboratory — accurate, but too slow and too expensive for repeated or point-of-need measurement.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Our approach</h4>
+                            <p class="text-gray-700 leading-relaxed">The same MIP approach can be templated to other small molecules, which makes cortisol a natural second target for the electrode platform.</p>
+                        </div>
+                        <div class="bg-purple-50 rounded-lg p-4">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li class="flex gap-2"><span class="text-purple-700">•</span><span>Cortisol as lead target</span></li>
+                                <li class="flex gap-2"><span class="text-purple-700">•</span><span>Artificial recognition, no antibodies</span></li>
+                                <li class="flex gap-2"><span class="text-purple-700">•</span><span>Suited to saliva and sweat</span></li>
+                                <li class="flex gap-2"><span class="text-purple-700">•</span><span>Reusable, stable electrodes</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4 pt-1">
+                            <a href="technology.html" class="inline-flex items-center gap-1 text-sm font-semibold text-purple-700 hover:underline">MIP electrode technology →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-indigo-500 to-indigo-600 p-6 text-white">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-2xl font-bold">⌚ Wearable and sweat sensing</h3>
+                            <span class="badge badge-blue whitespace-nowrap">Dev-kit in development</span>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">The problem</h4>
+                            <p class="text-gray-700 leading-relaxed">Teams building wearable chemical sensors have to solve the electronics before they can even start on the chemistry, which puts months of hardware work in front of every experiment.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Our approach</h4>
+                            <p class="text-gray-700 leading-relaxed">A development kit that pairs the potentiostat front-end with functional electrodes in a wearable form factor, so the sensing chemistry is the part you work on.</p>
+                        </div>
+                        <div class="bg-indigo-50 rounded-lg p-4">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li class="flex gap-2"><span class="text-indigo-700">•</span><span>Sweat biomarker analysis</span></li>
+                                <li class="flex gap-2"><span class="text-indigo-700">•</span><span>Compact potentiostat front-end</span></li>
+                                <li class="flex gap-2"><span class="text-indigo-700">•</span><span>Development kit — €249</span></li>
+                                <li class="flex gap-2"><span class="text-indigo-700">•</span><span>For product and research teams</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4 pt-1">
+                            <a href="products.html" class="inline-flex items-center gap-1 text-sm font-semibold text-indigo-700 hover:underline">Wearable dev-kit →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 p-6 text-white">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-2xl font-bold">🔵 Micro- and nanoparticle characterisation</h3>
+                            <span class="badge badge-green whitespace-nowrap">Active — funded project</span>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">The problem</h4>
+                            <p class="text-gray-700 leading-relaxed">Sizing particles between a few hundred nanometres and a few micrometres normally means optical instruments that are expensive, bench-bound, and awkward with opaque or complex samples.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Our approach</h4>
+                            <p class="text-gray-700 leading-relaxed">Ring ultra-microelectrodes detect individual particles as current-blockade events — label-free, one particle at a time, in a format that can leave the optical bench behind.</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li class="flex gap-2"><span class="text-green-700">•</span><span>Single-particle resolution</span></li>
+                                <li class="flex gap-2"><span class="text-green-700">•</span><span>300 nm – 5 μm size range</span></li>
+                                <li class="flex gap-2"><span class="text-green-700">•</span><span>Label-free current-blockade detection</span></li>
+                                <li class="flex gap-2"><span class="text-green-700">•</span><span>Patent pending</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4 pt-1">
+                            <a href="technology.html" class="inline-flex items-center gap-1 text-sm font-semibold text-green-700 hover:underline">Single-entity electrochemistry →</a>
+                            <a href="research.html" class="inline-flex items-center gap-1 text-sm font-semibold text-green-700 hover:underline">Particle sizing project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-orange-500 to-orange-600 p-6 text-white">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-2xl font-bold">🥛 Food safety — spores in dairy</h3>
+                            <span class="badge badge-yellow whitespace-nowrap">Research 2025–2026</span>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">The problem</h4>
+                            <p class="text-gray-700 leading-relaxed">Bacterial spores survive pasteurisation and spoil dairy downstream, but culture-based detection takes days — long after the product has moved on.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Our approach</h4>
+                            <p class="text-gray-700 leading-relaxed">SporeSpotter applies surface-enhanced Raman scattering to detect bacterial spores in milk, as a funded research project rather than a product.</p>
+                        </div>
+                        <div class="bg-orange-50 rounded-lg p-4">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li class="flex gap-2"><span class="text-orange-700">•</span><span>SERS-based detection</span></li>
+                                <li class="flex gap-2"><span class="text-orange-700">•</span><span>Bacterial spores in milk</span></li>
+                                <li class="flex gap-2"><span class="text-orange-700">•</span><span>Funded research project</span></li>
+                                <li class="flex gap-2"><span class="text-orange-700">•</span><span>Collaboration welcome</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4 pt-1">
+                            <a href="research.html" class="inline-flex items-center gap-1 text-sm font-semibold text-orange-700 hover:underline">SporeSpotter project →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Custom development -->
+        <section class="mb-20 bg-gradient-to-br from-blue-600 to-purple-600 text-white rounded-2xl p-8 md:p-12 shadow-xl">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Your measurement isn't on this list?</h2>
+                <p class="text-lg text-blue-100 mb-8 leading-relaxed">
+                    Most of the work above began as someone else's problem. If you have a target molecule or
+                    particle you need to detect, tell us what it is and in what matrix — we will say honestly
+                    whether our platform is a sensible fit before anyone commits to anything.
+                </p>
+                <div class="grid sm:grid-cols-3 gap-4 mb-10 text-left">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+                        <h3 class="font-bold mb-2">Custom electrodes</h3>
+                        <p class="text-sm text-blue-50">Recognition layers developed for your target.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+                        <h3 class="font-bold mb-2">Hardware integration</h3>
+                        <p class="text-sm text-blue-50">Potentiostat front-end built into your product.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+                        <h3 class="font-bold mb-2">Applied R&amp;D</h3>
+                        <p class="text-sm text-blue-50">Joint projects and grant applications.</p>
+                    </div>
+                </div>
+                <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                        class="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-colors shadow-xl cursor-pointer">
+                    Describe your application
+                </button>
+                <p class="mt-4 text-sm text-blue-100">Response time: typically within 48 hours</p>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer class="mt-16 pt-12 border-t-2 border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">SeeNano Technology BV</h3>
+                    <p class="text-gray-600 mb-6">Electrochemical biosensing &amp; point-of-need hardware | Enschede, Netherlands 🇳🇱</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 mb-8">
+                    <a href="mailto:support@seenano.nl"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@seenano.nl
+                    </a>
+                    <a href="https://www.linkedin.com/in/xiaojun-yang-5066b0114"
+                       target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://twitter.com/XiaojunYang0805"
+                       target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                </div>
+
+                <div class="text-center mb-8">
+                    <a href="https://seenano.nl"
+                       class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center gap-2 text-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        Back to SeeNano.nl Main Portfolio
+                    </a>
+                </div>
+
+                <div class="text-center text-gray-500 text-sm">
+                    <p class="mb-2">© 2026 SeeNano Technology BV. All rights reserved.</p>
+                    <p>Last updated: August 2026</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-t-2xl flex justify-between items-center">
+                <h3 class="text-2xl font-bold">Hardware Inquiry</h3>
+                <button onclick="document.getElementById('contactModal').classList.add('hidden')"
+                        class="text-white hover:text-gray-200 text-3xl leading-none">&times;</button>
+            </div>
+
+            <div class="p-8">
+                <form action="https://formspree.io/f/xanyqgqv" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Product of Interest</label>
+                        <select id="product" name="product"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                            <option value="">Select a product...</option>
+                            <option value="potentiostat">Point-of-Need Potentiostat (€199)</option>
+                            <option value="electrodes">Functional Electrodes (€20/electrode)</option>
+                            <option value="wearable">Wearable Dev-Kit (€249)</option>
+                            <option value="custom">Custom Solution</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+                                  placeholder="Tell us about your project or inquiry..."></textarea>
+                    </div>
+                    <div class="flex gap-4">
+                        <button type="submit"
+                                class="flex-1 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">
+                            Send Inquiry
+                        </button>
+                        <button type="button"
+                                onclick="document.getElementById('contactModal').classList.add('hidden')"
+                                class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+                <p class="text-center text-sm text-gray-600 mt-6 pt-6 border-t border-gray-200">
+                    Or email directly: <a href="mailto:support@seenano.nl" class="text-blue-600 hover:underline font-medium">support@seenano.nl</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Close modal when clicking outside -->
+    <script>
+        document.getElementById('contactModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
