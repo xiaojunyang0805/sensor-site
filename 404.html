@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page Not Found | Biosensor Research &amp; Hardware</title>
+    <meta name="description" content="This page could not be found.">
+    <meta name="robots" content="noindex">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGW5JX03J1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HGW5JX03J1', {
+        'cookie_domain': '.seenano.nl',
+        'linker': {
+          'domains': ['www.seenano.nl', 'nanosim.seenano.nl', 'receiptsort.seenano.nl', 'stembot.seenano.nl', 'sensor.seenano.nl']
+        }
+      });
+      // Report which URL 404'd, so broken inbound links are visible in GA4.
+      gtag('event', 'page_not_found', {
+        'page_location': window.location.href,
+        'page_referrer': document.referrer
+      });
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-purple-50 min-h-screen flex items-center justify-center px-4">
+
+    <main class="max-w-lg w-full text-center">
+
+        <p class="text-7xl md:text-8xl font-bold gradient-text">404</p>
+
+        <h1 class="mt-4 text-2xl md:text-3xl font-bold text-gray-900">
+            This page doesn't exist
+        </h1>
+
+        <p class="mt-4 text-gray-600 leading-relaxed">
+            The link may be out of date, or the address slightly off.
+            Nothing is broken on our side — the page simply isn't here.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="/"
+               class="px-6 py-3 rounded-lg gradient-bg text-white font-semibold hover:opacity-90 transition">
+                Back to research home
+            </a>
+            <a href="https://seenano.nl"
+               class="px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-white transition">
+                Main portfolio
+            </a>
+        </div>
+
+        <p class="mt-10 text-sm text-gray-500">
+            Think this should be here?
+            <a href="mailto:support@seenano.nl" class="text-indigo-600 hover:underline">support@seenano.nl</a>
+        </p>
+
+        <p class="mt-8 text-xs text-gray-400">
+            &copy; SeeNano Technology BV &middot; Enschede, Netherlands
+        </p>
+
+    </main>
+
+</body>
+</html>
