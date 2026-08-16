@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | SeeNano Technology BV</title>
+    <meta name="description" content="SeeNano Technology B.V. — founded 2021 in Enschede, Netherlands. Our mission, milestones, founder, partner institutions and company details.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About | SeeNano Technology BV">
+    <meta property="og:description" content="Founded 2021 in Enschede. Democratising single-molecule sensing through affordable, portable electrochemical platforms.">
+    <meta property="og:type" content="website">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGW5JX03J1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HGW5JX03J1', {
+        'cookie_domain': '.seenano.nl',
+        'linker': {
+          'domains': ['www.seenano.nl', 'nanosim.seenano.nl', 'receiptsort.seenano.nl', 'stembot.seenano.nl', 'sensor.seenano.nl']
+        }
+      });
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .tech-card {
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .badge-green {
+            background-color: #D1FAE5;
+            color: #065F46;
+        }
+
+        .badge-blue {
+            background-color: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .badge-purple {
+            background-color: #E9D5FF;
+            color: #6B21A8;
+        }
+
+        .badge-yellow {
+            background-color: #FEF3C7;
+            color: #92400E;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Shared nav (duplicated per page on purpose: static site, no build step) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <a href="index.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                    <span class="text-xl font-bold text-gray-900">SeeNano</span>
+                    <span class="hidden sm:inline text-[10px] font-semibold text-gray-500 uppercase tracking-widest">Technology BV</span>
+                </a>
+                <div class="flex items-center gap-1 text-sm overflow-x-auto">
+                    <a href="index.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Home</a>
+                    <a href="technology.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Technology</a>
+                    <a href="products.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Products</a>
+                    <a href="applications.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Applications</a>
+                    <a href="research.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Research</a>
+                    <a href="about.html" aria-current="page" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-indigo-700 bg-indigo-50">About</a>
+                    <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                            class="ml-1 px-4 py-2 rounded-md gradient-bg text-white font-semibold whitespace-nowrap hover:opacity-90 transition">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page header -->
+    <section class="gradient-bg text-white py-14 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">About SeeNano</h1>
+            <p class="text-lg opacity-95 max-w-3xl mx-auto">
+                Who we are, how we got here, and how we work with people
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 py-16">
+
+        <!-- Mission -->
+        <section class="mb-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="uppercase tracking-widest text-xs font-semibold text-indigo-600 mb-4">Our mission</p>
+                <p class="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-8">
+                    To democratise single-molecule sensing — taking capability that exists mainly inside
+                    well-funded laboratories and packaging it into affordable, portable platforms.
+                </p>
+                <div class="text-gray-700 space-y-4 text-left leading-relaxed">
+                    <p>
+                        SeeNano Technology B.V. was founded in November 2021 in Enschede, the Netherlands.
+                        We work where nanotechnology meets electrochemistry: detecting signals small enough
+                        to correspond to single particles and single molecules, and making that detection
+                        cheap and portable enough to be worth using outside a specialist lab.
+                    </p>
+                    <p>
+                        The company grew out of research on ring ultra-microelectrodes and molecularly
+                        imprinted polymers. That research continues — and funds itself — but the purpose is
+                        products: instruments and electrodes other people can build their own measurements on.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How we work -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-4 text-center">How we work with people</h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">Three ways engagements usually start</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="tech-card bg-white rounded-xl shadow-lg border border-gray-200 p-8">
+                    <p class="text-4xl mb-4">📦</p>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Buy the hardware</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Take the potentiostat and functional electrodes as they are and run your own
+                        measurements. The fastest route, and the cheapest.
+                    </p>
+                    <a href="products.html" class="text-indigo-600 font-semibold hover:underline">See products &rarr;</a>
+                </div>
+                <div class="tech-card bg-white rounded-xl shadow-lg border border-gray-200 p-8">
+                    <p class="text-4xl mb-4">🧪</p>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Custom development</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        A recognition layer templated to your target molecule, or the potentiostat
+                        front-end integrated into your own product.
+                    </p>
+                    <a href="applications.html" class="text-indigo-600 font-semibold hover:underline">See applications &rarr;</a>
+                </div>
+                <div class="tech-card bg-white rounded-xl shadow-lg border border-gray-200 p-8">
+                    <p class="text-4xl mb-4">🤝</p>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Applied research</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Joint projects, grant applications and student placements — how most of our
+                        current work began.
+                    </p>
+                    <a href="research.html" class="text-indigo-600 font-semibold hover:underline">See research &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-4 text-center">How we got here</h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">Milestones since incorporation</p>
+            <div class="max-w-3xl mx-auto">
+                <div class="flex gap-5">
+                    <div class="shrink-0 w-24 md:w-28 text-right">
+                        <span class="text-sm font-bold text-indigo-700">2021</span>
+                    </div>
+                    <div class="relative flex-1 pb-8 pl-6 border-l-2 border-indigo-100">
+                        <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-500"></span>
+                        <h3 class="font-bold text-gray-900 mb-1">SeeNano Technology B.V. founded</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Incorporated in November 2021 in Enschede, to commercialise ultra-sensitive electrochemical sensing.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="shrink-0 w-24 md:w-28 text-right">
+                        <span class="text-sm font-bold text-indigo-700">2022</span>
+                    </div>
+                    <div class="relative flex-1 pb-8 pl-6 border-l-2 border-indigo-100">
+                        <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-500"></span>
+                        <h3 class="font-bold text-gray-900 mb-1">Ring ultra-microelectrode work published</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed"><em>Analytical Chemistry</em> paper on current-blockade particle-impact electrochemistry — the basis of the particle-sizing platform.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="shrink-0 w-24 md:w-28 text-right">
+                        <span class="text-sm font-bold text-indigo-700">2024</span>
+                    </div>
+                    <div class="relative flex-1 pb-8 pl-6 border-l-2 border-indigo-100">
+                        <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-500"></span>
+                        <h3 class="font-bold text-gray-900 mb-1">Poster prize, Dutch Micro-Nano Conference</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Recognition for sensing micro-/nanoparticles on nano-ring electrodes.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="shrink-0 w-24 md:w-28 text-right">
+                        <span class="text-sm font-bold text-indigo-700">2024–2025</span>
+                    </div>
+                    <div class="relative flex-1 pb-8 pl-6 border-l-2 border-indigo-100">
+                        <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-500"></span>
+                        <h3 class="font-bold text-gray-900 mb-1">KIEM-GoChem particle sizing project</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">€40,000 Dutch SIA funding for a portable electrochemical particle-sizing system.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="shrink-0 w-24 md:w-28 text-right">
+                        <span class="text-sm font-bold text-indigo-700">2025–2026</span>
+                    </div>
+                    <div class="relative flex-1 pb-8 pl-6 border-l-2 border-indigo-100">
+                        <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-500"></span>
+                        <h3 class="font-bold text-gray-900 mb-1">SporeSpotter</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">A second €40,000 SIA KIEM-GoChem project, applying SERS to bacterial spore detection in dairy.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="shrink-0 w-24 md:w-28 text-right">
+                        <span class="text-sm font-bold text-indigo-700">Ongoing</span>
+                    </div>
+                    <div class="relative flex-1 pb-8 pl-6 border-l-2 border-indigo-100">
+                        <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-indigo-500"></span>
+                        <h3 class="font-bold text-gray-900 mb-1">ORCHIDD, with ECsens</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Industry collaboration raising the technology readiness of electrochemical biosensor platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-4 text-center">Founder</h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">Xiaojun Yang &middot; Enschede, Netherlands</p>
+
+            <div class="max-w-3xl mx-auto mb-10 text-gray-700 leading-relaxed space-y-4">
+                <p>
+                    SeeNano was founded by <strong class="text-gray-900">Xiaojun Yang</strong>, who combines
+                    applied nanotechnology with hands-on hardware development — electrode fabrication,
+                    instrument design and the signal processing in between. Alongside the company he has
+                    worked as a biosensor researcher at Saxion University, which is where several of the
+                    funded projects on this site are hosted.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-blue-600">🎓 Education</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>
+                            <p class="font-semibold">M.Sc. Applied Nanotechnology</p>
+                            <p class="text-gray-600">Saxion University (2018-2020)</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">M.Sc. Mechanical Engineering</p>
+                            <p class="text-gray-600">Shanghai Jiao Tong University (2012-2015)</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">HarvardX MCB63X</p>
+                            <p class="text-gray-600">Biochemistry (2023)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-blue-600">🛠️ Technical Skills</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• Electrochemistry & biosensors</li>
+                        <li>• Nanofabrication (MEMS/NEMS)</li>
+                        <li>• COMSOL, Ansys simulation</li>
+                        <li>• Python, MATLAB, LabVIEW</li>
+                        <li>• SolidWorks (CAD/prototyping)</li>
+                        <li>• Data analysis & modeling</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-blue-600">💼 Research Experience</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>
+                            <p class="font-semibold">Saxion University (2022-2025)</p>
+                            <p class="text-gray-600">Biosensor researcher</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">University of Twente (2020-2021)</p>
+                            <p class="text-gray-600">Internship researcher</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">Machine Learning for Data Analysis</p>
+                            <p class="text-gray-600">CNN-based signal processing</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TODO (blocked): co-founder and advisory board.
+             The 2025 imec.istart material names a co-founder/CTO and two academic advisors.
+             Not published: naming real people in company roles needs their explicit consent,
+             and that source is ~16 months old. See doc/SENSOR_REDESIGN_PLAN.md. -->
+
+        <!-- Partners -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-4 text-center">Partners and institutions</h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">Who we work with, and on what</p>
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-indigo-400">
+                    <h3 class="font-bold text-gray-900 mb-2">Saxion University of Applied Sciences</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Applied Nanotechnology research group — host institution for the funded research projects.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-indigo-400">
+                    <h3 class="font-bold text-gray-900 mb-2">University of Twente</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Research collaboration; co-authors on the peer-reviewed particle-impact electrochemistry work.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-indigo-400">
+                    <h3 class="font-bold text-gray-900 mb-2">ECsens</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Industry partner on ORCHIDD, raising biosensor technology readiness.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-indigo-400">
+                    <h3 class="font-bold text-gray-900 mb-2">Regieorgaan SIA</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Funder of both KIEM-GoChem projects (€80,000 combined).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company details -->
+        <section class="mb-20">
+            <div class="max-w-3xl mx-auto bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-10 border border-indigo-100">
+                <h2 class="text-2xl font-bold mb-6 text-center text-gray-900">Company details</h2>
+                <dl class="grid sm:grid-cols-2 gap-6 text-sm mb-8">
+                    <div>
+                        <dt class="text-gray-500 mb-1">Legal name</dt>
+                        <dd class="font-semibold text-gray-900">SeeNano Technology B.V.</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500 mb-1">Incorporated</dt>
+                        <dd class="font-semibold text-gray-900">November 2021</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500 mb-1">Registered in</dt>
+                        <dd class="font-semibold text-gray-900">Enschede, Netherlands</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500 mb-1">Contact</dt>
+                        <dd class="font-semibold"><a href="mailto:support@seenano.nl" class="text-indigo-600 hover:underline">support@seenano.nl</a></dd>
+                    </div>
+                </dl>
+                <div class="text-center">
+                    <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                            class="px-8 py-3 rounded-lg gradient-bg text-white font-semibold hover:opacity-90 transition shadow-lg">
+                        Get in touch
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer class="mt-16 pt-12 border-t-2 border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">SeeNano Technology BV</h3>
+                    <p class="text-gray-600 mb-6">Electrochemical biosensing &amp; point-of-need hardware | Enschede, Netherlands 🇳🇱</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 mb-8">
+                    <a href="mailto:support@seenano.nl"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@seenano.nl
+                    </a>
+                    <a href="https://www.linkedin.com/in/xiaojun-yang-5066b0114"
+                       target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://twitter.com/XiaojunYang0805"
+                       target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                </div>
+
+                <div class="text-center mb-8">
+                    <a href="https://seenano.nl"
+                       class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center gap-2 text-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        Back to SeeNano.nl Main Portfolio
+                    </a>
+                </div>
+
+                <div class="text-center text-gray-500 text-sm">
+                    <p class="mb-2">© 2026 SeeNano Technology BV. All rights reserved.</p>
+                    <p>Last updated: August 2026</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-t-2xl flex justify-between items-center">
+                <h3 class="text-2xl font-bold">Hardware Inquiry</h3>
+                <button onclick="document.getElementById('contactModal').classList.add('hidden')"
+                        class="text-white hover:text-gray-200 text-3xl leading-none">&times;</button>
+            </div>
+
+            <div class="p-8">
+                <form action="https://formspree.io/f/xanyqgqv" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Product of Interest</label>
+                        <select id="product" name="product"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                            <option value="">Select a product...</option>
+                            <option value="potentiostat">Point-of-Need Potentiostat (€199)</option>
+                            <option value="electrodes">Functional Electrodes (€20/electrode)</option>
+                            <option value="wearable">Wearable Dev-Kit (€249)</option>
+                            <option value="custom">Custom Solution</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+                                  placeholder="Tell us about your project or inquiry..."></textarea>
+                    </div>
+                    <div class="flex gap-4">
+                        <button type="submit"
+                                class="flex-1 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">
+                            Send Inquiry
+                        </button>
+                        <button type="button"
+                                onclick="document.getElementById('contactModal').classList.add('hidden')"
+                                class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+                <p class="text-center text-sm text-gray-600 mt-6 pt-6 border-t border-gray-200">
+                    Or email directly: <a href="mailto:support@seenano.nl" class="text-blue-600 hover:underline font-medium">support@seenano.nl</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Close modal when clicking outside -->
+    <script>
+        document.getElementById('contactModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
