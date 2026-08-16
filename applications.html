@@ -81,7 +81,9 @@
                     <span class="text-xl font-bold text-gray-900">SeeNano</span>
                     <span class="hidden sm:inline text-[10px] font-semibold text-gray-500 uppercase tracking-widest">Technology BV</span>
                 </a>
-                <div class="flex items-center gap-1 text-sm overflow-x-auto">
+
+                <!-- Desktop links -->
+                <div class="hidden md:flex items-center gap-1 text-sm">
                     <a href="/" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Home</a>
                     <a href="/technology" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Technology</a>
                     <a href="/products" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Products</a>
@@ -93,6 +95,32 @@
                         Contact
                     </button>
                 </div>
+
+                <!-- Mobile toggle -->
+                <button id="navToggle" type="button"
+                        class="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-gray-700 hover:bg-gray-100 transition"
+                        aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                    <svg id="navIconOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="navIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile panel -->
+            <div id="mobileNav" class="hidden md:hidden pb-4 space-y-1 border-t border-gray-100 pt-3">
+                <a href="/" class="block px-4 py-3 rounded-lg font-medium transition text-gray-700 hover:bg-gray-50">Home</a>
+                <a href="/technology" class="block px-4 py-3 rounded-lg font-medium transition text-gray-700 hover:bg-gray-50">Technology</a>
+                <a href="/products" class="block px-4 py-3 rounded-lg font-medium transition text-gray-700 hover:bg-gray-50">Products</a>
+                <a href="/applications" aria-current="page" class="block px-4 py-3 rounded-lg font-medium transition text-indigo-700 bg-indigo-50">Applications</a>
+                <a href="/research" class="block px-4 py-3 rounded-lg font-medium transition text-gray-700 hover:bg-gray-50">Research</a>
+                <a href="/about" class="block px-4 py-3 rounded-lg font-medium transition text-gray-700 hover:bg-gray-50">About</a>
+                <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                        class="w-full mt-2 px-4 py-3 rounded-lg gradient-bg text-white font-semibold hover:opacity-90 transition">
+                    Contact
+                </button>
             </div>
         </div>
     </nav>
@@ -402,6 +430,42 @@
                 this.classList.add('hidden');
             }
         });
+    </script>
+
+    <!-- Mobile nav toggle -->
+    <script>
+        (function () {
+            var btn = document.getElementById('navToggle');
+            var panel = document.getElementById('mobileNav');
+            var iOpen = document.getElementById('navIconOpen');
+            var iClose = document.getElementById('navIconClose');
+            if (!btn || !panel) return;
+
+            function setOpen(open) {
+                panel.classList.toggle('hidden', !open);
+                iOpen.classList.toggle('hidden', open);
+                iClose.classList.toggle('hidden', !open);
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            }
+
+            btn.addEventListener('click', function () {
+                setOpen(panel.classList.contains('hidden'));
+            });
+
+            // Escape closes, and focus returns to the toggle
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !panel.classList.contains('hidden')) {
+                    setOpen(false);
+                    btn.focus();
+                }
+            });
+
+            // Resizing up to desktop must not leave the panel stuck open
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 768) setOpen(false);
+            });
+        })();
     </script>
 
 </body>
