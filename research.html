@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | SeeNano Technology BV</title>
+    <meta name="description" content="Funded research projects, peer-reviewed publications and collaboration opportunities in electrochemical biosensing and applied nanotechnology.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Research | SeeNano Technology BV">
+    <meta property="og:description" content="Funded research projects, peer-reviewed publications and collaboration opportunities in electrochemical biosensing and applied nanotechnology.">
+    <meta property="og:type" content="website">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGW5JX03J1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HGW5JX03J1', {
+        'cookie_domain': '.seenano.nl',
+        'linker': {
+          'domains': ['www.seenano.nl', 'nanosim.seenano.nl', 'receiptsort.seenano.nl', 'stembot.seenano.nl', 'sensor.seenano.nl']
+        }
+      });
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .tech-card {
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .badge-green {
+            background-color: #D1FAE5;
+            color: #065F46;
+        }
+
+        .badge-blue {
+            background-color: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .badge-purple {
+            background-color: #E9D5FF;
+            color: #6B21A8;
+        }
+
+        .badge-yellow {
+            background-color: #FEF3C7;
+            color: #92400E;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Shared nav (duplicated per page on purpose: static site, no build step) -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <a href="index.html" class="flex items-baseline gap-2 shrink-0">
+                    <span class="text-xl font-bold text-gray-900">SeeNano</span>
+                    <span class="hidden sm:inline text-[10px] font-semibold text-gray-500 uppercase tracking-widest">Technology BV</span>
+                </a>
+                <div class="flex items-center gap-1 text-sm overflow-x-auto">
+                    <a href="index.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Home</a>
+                    <a href="technology.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Technology</a>
+                    <a href="products.html" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">Products</a>
+                    <a href="research.html" aria-current="page" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-indigo-700 bg-indigo-50">Research</a>
+                    <a href="index.html#about-company" class="px-3 py-2 rounded-md font-medium whitespace-nowrap transition text-gray-600 hover:text-gray-900 hover:bg-gray-50">About</a>
+                    <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                            class="ml-1 px-4 py-2 rounded-md gradient-bg text-white font-semibold whitespace-nowrap hover:opacity-90 transition">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="gradient-bg text-white py-14 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Research</h1>
+            <p class="text-lg opacity-95 max-w-3xl mx-auto">Funded projects, peer-reviewed publications and collaboration routes</p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 py-16">
+
+<!-- Current Research Projects -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-4 text-center">Current Research Projects</h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">Hardware development and applied research at Saxion University (2022 - 2025)</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1: Particle Sizing -->
+                <div class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold">Micro-/Nanoparticle Sizing</h3>
+                            <span class="badge badge-green">Active</span>
+                        </div>
+                        <p class="text-blue-50">Electrochemical sensing platform for particle characterization</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Developing a portable electrochemical system for sizing particles from 300 nm to 5 μm using ring ultra-microelectrodes and single-entity electrochemistry.
+                        </p>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800 mb-2">Funding:</p>
+                            <p class="text-sm text-gray-600">Dutch SIA KIEM-GoChem (2024-2025) | €40,000</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 mb-2">Applications:</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Medical diagnostics</li>
+                                <li>• Environmental monitoring</li>
+                                <li>• Quality control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: PFAS Sensor -->
+                <div class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold">MIP-Based PFAS Sensor</h3>
+                            <span class="badge badge-blue">In Development</span>
+                        </div>
+                        <p class="text-green-50">Environmental contamination detection platform</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Molecular Imprinted Polymer (MIP) functionalized electrodes for sensitive PFAS detection in water and environmental samples.
+                        </p>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800 mb-2">Technology:</p>
+                            <p class="text-sm text-gray-600">Electrochemical detection with artificial recognition elements</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 mb-2">Target:</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Picomolar sensitivity</li>
+                                <li>• Low-cost screening</li>
+                                <li>• Point-of-need testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: SporeSpotter -->
+                <div class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold">SporeSpotter</h3>
+                            <span class="badge badge-yellow">2025-2026</span>
+                        </div>
+                        <p class="text-purple-50">SERS-based bacterial spore detection in milk</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Surface-Enhanced Raman Scattering (SERS) platform for rapid detection of bacterial spores in dairy products.
+                        </p>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800 mb-2">Funding:</p>
+                            <p class="text-sm text-gray-600">Dutch SIA KIEM-GoChem (2025-2026) | €40,000</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 mb-2">Innovation:</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Particle-based SERS sensing</li>
+                                <li>• Food safety application</li>
+                                <li>• Rapid screening method</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: ORCHIDD -->
+                <div class="tech-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-gradient-to-br from-orange-500 to-orange-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold">ORCHIDD Project</h3>
+                            <span class="badge badge-purple">Industry Collab</span>
+                        </div>
+                        <p class="text-orange-50">Biosensor technology readiness enhancement</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Collaboration with startup ECsens to enhance the technology readiness level (TRL) of electrochemical biosensor platforms.
+                        </p>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800 mb-2">Partner:</p>
+                            <p class="text-sm text-gray-600">ECsens (Startup)</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 mb-2">Focus:</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Prototype optimization</li>
+                                <li>• Sensor validation</li>
+                                <li>• Commercial readiness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Publications -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-4 text-center">Peer-Reviewed Publications</h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">Research contributions to the field</p>
+
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <!-- Publication 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-blue-500">
+                    <p class="font-bold text-lg mb-2 text-gray-900">
+                        Ring Ultramicroelectrodes for Current-Blockade Particle-Impact Electrochemistry
+                    </p>
+                    <p class="text-gray-700 mb-2 text-sm">
+                        Taghi Moazzenzade, Tieme Walstra, <strong>Xiaojun Yang</strong>, Jurriaan Huskens, and Serge G. Lemay
+                    </p>
+                    <p class="text-gray-600 text-sm mb-3">
+                        <em>Analytical Chemistry</em> <strong>2022</strong>, 94 (28), 10168-10174
+                    </p>
+                    <a href="https://doi.org/10.1021/acs.analchem.2c01503"
+                       target="_blank"
+                       class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                        DOI: 10.1021/acs.analchem.2c01503 →
+                    </a>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-purple-500">
+                    <p class="font-bold text-lg mb-2 text-gray-900">
+                        Self-Induced Convection at Microelectrodes: Its Influence on Impact Electrochemistry
+                    </p>
+                    <p class="text-gray-700 mb-2 text-sm">
+                        Taghi Moazzenzade, <strong>Xiaojun Yang</strong>, Luc Walterbos, Jurriaan Huskens, Christophe Renault, and Serge G. Lemay
+                    </p>
+                    <p class="text-gray-600 text-sm mb-3">
+                        <em>Journal of the American Chemical Society</em> <strong>2020</strong>, 142 (42), 17908-17912
+                    </p>
+                    <a href="https://doi.org/10.1021/jacs.0c08450"
+                       target="_blank"
+                       class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                        DOI: 10.1021/jacs.0c08450 →
+                    </a>
+                </div>
+
+                <!-- Conference Presentation -->
+                <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 shadow-md border-l-4 border-orange-400">
+                    <div class="flex items-start justify-between">
+                        <div class="flex-1">
+                            <p class="font-bold text-lg mb-2 text-gray-900">
+                                Sensing Micro-/Nanoparticles on Nano-ring Electrodes
+                            </p>
+                            <p class="text-gray-700 mb-2 text-sm">
+                                Poster presentation at the <strong>2024 Dutch Micro-Nano Conference</strong>
+                            </p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                <strong>Xiaojun Yang</strong>, Saxion University of Applied Sciences
+                            </p>
+                            <a href="20241021 Poster_MNP sizer_v03.pdf"
+                               target="_blank"
+                               class="inline-flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                </svg>
+                                View Poster
+                            </a>
+                        </div>
+                        <div class="ml-4">
+                            <span class="badge badge-green text-lg">🏆 Poster Prize</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Collaboration Opportunities -->
+        <section class="mb-20 bg-gradient-to-br from-blue-600 to-purple-600 text-white rounded-2xl p-8 md:p-12 shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-center">Research Collaboration Opportunities</h2>
+            <p class="text-center text-lg mb-10 text-blue-100">
+                Open to partnerships in biosensor development, applied nanotechnology, and point-of-care diagnostics
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+                <!-- Collaboration Type 1 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <h3 class="text-xl font-bold mb-3">🤝 Academic Collaborations</h3>
+                    <ul class="space-y-2 text-blue-50">
+                        <li>• Joint research projects</li>
+                        <li>• Co-authored publications</li>
+                        <li>• PhD/Master supervision</li>
+                        <li>• Grant applications (EU Horizon, NWO)</li>
+                    </ul>
+                </div>
+
+                <!-- Collaboration Type 2 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <h3 class="text-xl font-bold mb-3">🏢 Industry Partnerships</h3>
+                    <ul class="space-y-2 text-blue-50">
+                        <li>• Technology transfer projects</li>
+                        <li>• Custom sensor development</li>
+                        <li>• Prototype validation</li>
+                        <li>• Technical consulting</li>
+                    </ul>
+                </div>
+
+                <!-- Collaboration Type 3 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <h3 class="text-xl font-bold mb-3">🔬 Hardware Integration</h3>
+                    <ul class="space-y-2 text-blue-50">
+                        <li>• Custom electrode development</li>
+                        <li>• Potentiostat integration</li>
+                        <li>• Sensing platform optimization</li>
+                        <li>• Early access to dev-kits</li>
+                    </ul>
+                </div>
+
+                <!-- Collaboration Type 4 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <h3 class="text-xl font-bold mb-3">🎓 Student Projects</h3>
+                    <ul class="space-y-2 text-blue-50">
+                        <li>• Master thesis supervision</li>
+                        <li>• Internship opportunities</li>
+                        <li>• Research training</li>
+                        <li>• Hands-on experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button onclick="document.getElementById('contactModal').classList.remove('hidden')"
+                   class="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-colors shadow-xl cursor-pointer">
+                    Get in Touch
+                </button>
+                <p class="mt-4 text-sm text-blue-100">
+                    Response time: typically within 48 hours
+                </p>
+            </div>
+        </section>
+
+<!-- Academic Profile -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Academic Profile & Expertise</h2>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Education -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-blue-600">🎓 Education</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>
+                            <p class="font-semibold">M.Sc. Applied Nanotechnology</p>
+                            <p class="text-gray-600">Saxion University (2018-2020)</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">M.Sc. Mechanical Engineering</p>
+                            <p class="text-gray-600">Shanghai Jiao Tong University (2012-2015)</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">HarvardX MCB63X</p>
+                            <p class="text-gray-600">Biochemistry (2023)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skills -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-blue-600">🛠️ Technical Skills</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• Electrochemistry & biosensors</li>
+                        <li>• Nanofabrication (MEMS/NEMS)</li>
+                        <li>• COMSOL, Ansys simulation</li>
+                        <li>• Python, MATLAB, LabVIEW</li>
+                        <li>• SolidWorks (CAD/prototyping)</li>
+                        <li>• Data analysis & modeling</li>
+                    </ul>
+                </div>
+
+                <!-- Experience -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-blue-600">💼 Research Experience</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>
+                            <p class="font-semibold">Saxion University (2022-2025)</p>
+                            <p class="text-gray-600">Biosensor researcher</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">University of Twente (2020-2021)</p>
+                            <p class="text-gray-600">Internship researcher</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">Machine Learning for Data Analysis</p>
+                            <p class="text-gray-600">CNN-based signal processing</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!-- Footer / Contact -->
+        <footer class="mt-16 pt-12 border-t-2 border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">SeeNano Technology BV</h3>
+                    <p class="text-gray-600 mb-6">Electrochemical biosensing &amp; point-of-need hardware | Enschede, Netherlands 🇳🇱</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 mb-8">
+                    <a href="mailto:support@seenano.nl"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        support@seenano.nl
+                    </a>
+                    <a href="https://www.linkedin.com/in/xiaojun-yang-5066b0114"
+                       target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://twitter.com/XiaojunYang0805"
+                       target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                </div>
+
+                <div class="text-center mb-8">
+                    <a href="https://seenano.nl"
+                       class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center gap-2 text-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        Back to SeeNano.nl Main Portfolio
+                    </a>
+                </div>
+
+                <div class="text-center text-gray-500 text-sm">
+                    <p class="mb-2">© 2026 SeeNano Technology BV. All rights reserved.</p>
+                    <p>Last updated: August 2026</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- Contact Form Modal -->
+    <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-t-2xl flex justify-between items-center">
+                <h3 class="text-2xl font-bold">Hardware Inquiry</h3>
+                <button onclick="document.getElementById('contactModal').classList.add('hidden')"
+                        class="text-white hover:text-gray-200 text-3xl leading-none">&times;</button>
+            </div>
+
+            <div class="p-8">
+                <form action="https://formspree.io/f/xanyqgqv" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Product of Interest</label>
+                        <select id="product" name="product"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900">
+                            <option value="">Select a product...</option>
+                            <option value="potentiostat">Point-of-Need Potentiostat (€199)</option>
+                            <option value="electrodes">Functional Electrodes (€20/electrode)</option>
+                            <option value="wearable">Wearable Dev-Kit (€249)</option>
+                            <option value="custom">Custom Solution</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+                                  placeholder="Tell us about your project or inquiry..."></textarea>
+                    </div>
+                    <div class="flex gap-4">
+                        <button type="submit"
+                                class="flex-1 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">
+                            Send Inquiry
+                        </button>
+                        <button type="button"
+                                onclick="document.getElementById('contactModal').classList.add('hidden')"
+                                class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+                <p class="text-center text-sm text-gray-600 mt-6 pt-6 border-t border-gray-200">
+                    Or email directly: <a href="mailto:support@seenano.nl" class="text-blue-600 hover:underline font-medium">support@seenano.nl</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Close modal when clicking outside -->
+    <script>
+        document.getElementById('contactModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
